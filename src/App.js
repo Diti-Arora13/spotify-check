@@ -20,24 +20,14 @@ function App() {
     },
   ]
   
-  // const getReq = async () => {
-    //   const response = await fetch(`https://api.spotify.com/v1/tracks/${search}`);
-    //   response.json().then((res) => setId(res.data.users));
-    // };
-
-    // https://open.spotify.com/track/3sqrvkNC6IPTIXvvbx9Arw?si=b99a70435d7a4302
     
     const handleChange = e => {
       setSearch(e.target.value)
-      
-      // const urlId = (id.split("/"))[4].substring(0,22)  
     }
     
     let id  = search
-    let sm = id.split("/")[4]
-    let sm2 = sm.split('?')
-    console.log(sm2)
-    console.log(search);
+    let id2 = id.split("/")[4].substring(0,22)
+    console.log(id2)
     
 
   return (
