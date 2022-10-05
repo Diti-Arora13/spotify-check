@@ -1,0 +1,29 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 7px;
+  outline: none;
+  font-size: 23px;
+  display: block;
+}
+
+.post {
+  display: inline-flex;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.post > img {
+  height: 200px;
+  width: 200px;
+}
+
+.post > .content {
+  padding: 0 100px 0 10px; 
+}
